@@ -3,11 +3,11 @@
 {{!-- <ul>
   {{#each burgers}}
     {{#unless descrip}}
-      {{> burgers/burgers-block descrip=true}}
+      {{> burgers/burgers-block descrip=false}}
     {{/unless}}
   {{/each}}
-</ul>
- --}}
+</ul> --}}
+
 
 <ul>
   {{#each burgers}}
@@ -30,5 +30,7 @@
     <input type="radio" name="descrip" value="0"> Devour
   </div>
 
-  <button type="submit">Add Cat</button>
+  <button type="submit">Devour</button>
+  <button class="delete-burgers" data-id="{{this.id}}">DELETE!</button>
+
 </form>
